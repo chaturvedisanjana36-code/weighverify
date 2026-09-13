@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weighing & Measuring Verification</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<script src="script.js"></script>
+<body>
+
+    <header>
+        <div class="logo">⚖️ Legal Metrology</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#verify">Verify</a>
+            <a href="#status">Status</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="login">Login</button>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h1>Online Verification System</h1>
+
+            <p>
+                Verify your weighing and measuring instruments
+                online quickly and easily.
+            </p>
+
+            <button onclick="showForm()">Apply for Verification</button>
+        </div>
+
+        <div class="hero-icon">
+            ⚖️
+        </div>
+    </section>
+
+
+    <section class="features">
+
+        <div class="card">
+            <h2>⚖️</h2>
+            <h3>Instrument Verification</h3>
+            <p>Submit your instrument details for verification.</p>
+        </div>
+
+        <div class="card">
+            <h2>🔍</h2>
+            <h3>Track Status</h3>
+            <p>Check your application and verification status.</p>
+        </div>
+
+        <div class="card">
+            <h2>📜</h2>
+            <h3>Digital Certificate</h3>
+            <p>View and download your verification certificate.</p>
+        </div>
+
+    </section>
+
+
+    <section id="verify" class="form-section">
+
+        <h2>Apply for Verification</h2>
+
+        <form id="verificationForm">
+
+            <label>Applicant Name</label>
+            <input type="text" id="name" required>
+
+            <label>Instrument Type</label>
+
+            <select id="instrument" required>
+                <option value="">Select Instrument</option>
+                <option>Weighing Scale</option>
+                <option>Electronic Balance</option>
+                <option>Platform Scale</option>
+                <option>Measuring Machine</option>
+                <option>Other</option>
+            </select>
+
+            <label>Instrument Number</label>
+            <input type="text" id="instrumentNo" required>
+
+            <label>Location</label>
+            <input type="text" id="location" required>
+
+            <label>Verification Date</label>
+            <input type="date" required>
+
+            <button type="submit">Submit Application</button>
+
+        </form>
+
+        <p id="message"></p>
+
+    </section>
+
+
+    <section id="status" class="status">
+
+        <h2>Check Verification Status</h2>
+
+        <input type="text" id="applicationNo"
+               placeholder="Enter Application Number">
+
+        <button onclick="checkStatus()">Check Status</button>
+
+        <p id="statusMessage"></p>
+
+    </section>
+
+
+    <footer id="contact">
+
+        <h3>Online Verification System</h3>
+
+        <p>
+            For assistance, contact the Legal Metrology Department.
+        </p>
+
+        <p>© 2026 Online Verification System</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
